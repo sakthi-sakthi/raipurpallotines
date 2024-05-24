@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to KHRIST JOYTI PROVINCE</title>
+
+    <link rel="shortcut icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+    <link rel="icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <link href="../css/flaticon.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/custom-animate.css" rel="stylesheet">
+    <link href="../css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="../css/owl.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <!-- Main Header-->
+        <div id="header"></div>
+        <!-- End Main Header -->
+
+        <!-- Page Title -->
+        <section class="page-title" style="background-image:url(images/background/bg-13.jpg)">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>Vision & Mission</h1>
+                    <ul class="bread-crumb">
+                        <li><a class="home" href="index.html"><span class="fa fa-home"></span></a></li>
+                        <li>Vision & Mission</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <div class="auto-container">
+                <div class="description">
+                    <div class="top-content text-center">
+                        <h1>VISION & MISSION</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>VISION</h3>
+                            <h4>
+                                During the first half of the 19th century, St. Vincent Pallotti was among those whom God
+                                enriched with his gifts and inspiration for the purpose of helping the Church to fulfill
+                                her mission. Faced with the worsening crisis of faith that the Church of his time had to
+                                confront and the ever-increasing tasks for the spreading of the Gospel in mission
+                                territories, Saint Vincent Pallotti saw the urgent need to revive faith and renew
+                                charity among Catholics, with the intention of bringing all people to the unity of faith
+                                in Christ. To respond to this need, he considered it indispensable to secure the
+                                collaboration of all the members of the Church, both clergy and laity, and to unify
+                                their efforts in order to promote with greater effectiveness her apostolic mission.
+                            </h4>
+
+                            <h3>MISSION</h3>
+                            <h4>
+                                Like every association within the Catholic Church, the Society of the Catholic
+                                Apostolate has a specific mission, given by the founder. During the 170 years of its
+                                existence, Pallotti’s foundation had to face many challenging situations. After Vatican
+                                Council II, the Society took upon itself the responsibility to redefine its mission,
+                                taking into account the original ideas of the Founder, its historical development and
+                                the actual needs of the Church. The most important “reason of being” of the Society is
+                                that it has in common with the mission of Jesus Christ and of the Church, that is, “to
+                                revive faith and re-enkindle charity of the entire people of God and to spread faith and
+                                charity in the world, so that soon there may be but one flock and one shepherded’ (John
+                                10,16). This general mission, common with the whole Church, gets its specific imprint by
+                                Pallotti’s idea of the “catholic”, universal apostolate, which for St. Vincent Pallotti
+                                became the guiding idea of his activities. Such a concept of mission presupposes that
+                                every one is called to follow Jesus Christ and to shoulder his/her responsibility for
+                                the mission of the Church, to instill in all a profound conviction of their personal
+                                call to be a disciple of Jesus Christ and inspire them for a life with and for Christ.
+                                Generally we can say that the mission of the Society is to increase the collaboration
+                                among the among the members of the Church, that is, among the diocesan priests, the male
+                                and female religious and the laity to fulfill fully and more efficiently the apostolic
+                                tasks.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="footer"></div>
+
+    </div>
+    <!--End pagewrapper-->
+
+
+
+    <!-- JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/owl.js"></script>
+    <script src="../js/appear.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.fancybox.js"></script>
+    <script src="../js/menu-nav-btn.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <!-- Custom J../S -->
+    <script src="../js/script.js"></script>
+    <script>
+        // Function to fetch and insert header
+        function insertHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        }
+
+        // Function to fetch and insert footer
+        function insertFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the functions when the page loads
+        window.onload = function () {
+            insertHeader();
+            insertFooter();
+        };
+    </script>
+</body>
+
+</html>

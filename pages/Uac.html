@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to KHRIST JOYTI PROVINCE</title>
+
+    <link rel="shortcut icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+    <link rel="icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <link href="../css/flaticon.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/custom-animate.css" rel="stylesheet">
+    <link href="../css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="../css/owl.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Main Header-->
+        <div id="header"></div>
+
+        <!-- Page Title -->
+        <section class="page-title" style="background-image:url(images/background/bg-13.jpg)">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>UAC</h1>
+                    <ul class="bread-crumb">
+                        <li><a class="home" href="./index.html"><span class="fa fa-home"></span></a></li>
+                        <li>UAC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <div class="auto-container">
+                <div class="description">
+                    <div class="top-content text-center">
+                        <h1 class="mt-5">UNION OF THE CATHOLIC APOSTOLATE (UAC)</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4> On January 9, 1835, Pallotti founded the Union of Catholic Apostolate. He expressed his
+                                idea in the following words: “The Catholic Apostolate, that is the universal apostolate,
+                                which is common to all classes of people, consists in doing all that one must and can do
+                                for the greater glory of God and for one’s own salvation and that of one’s neighbour”.
+                                He further states, “Whether young or old, healthy or sick, alone or in community, in any
+                                position of life given to them by God, all can participate fully in the apostolic
+                                mission of Jesus Christ by any means whatever”. On July 11, 1835 Pope Gregory XVI gave
+                                his approval.</h4>
+
+                            <h4>
+                                The Society was placed under the protection of Mary, Queen of the Apostles. During the
+                                cholera plague in 1837, Pallotti constantly endangered his life while ministering to the
+                                cholera stricken. In 1838, the Society Pallotti founded was ordered to be dissolved on
+                                the perception of a duplication of the Society for the Propagation of the Faith.
+                                Pallotti appealed to the Pope against the decree and the order of dissolution was
+                                withdrawn.
+                            </h4>
+
+                            <h4>
+                                On October 28, 2003, the Union of Catholic Apostolate was declared an International
+                                Public Association of the Faithful by the Decree of the Pontifical Council of the Laity.
+                                Thus, “The Union of the Catholic Apostolate, a gift of the Holy Spirit, is a communion
+                                of the faithful who, united with God and with one another in accordance with the charism
+                                of St. Vincent Pallotti, promote the co-responsibility of all the baptized to revive
+                                faith and rekindle charity in the church and in the world, and bring all to unity in
+                                Christ”
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <br />
+        <!-- Main Footer -->
+        <div id="footer"></div>
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/owl.js"></script>
+    <script src="../js/appear.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.fancybox.js"></script>
+    <script src="../js/menu-nav-btn.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>
+    <script src="../js/jquery.countdown.min.js"></script>
+    <script src="../js/knob.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <script>
+        // Function to fetch and insert header
+        function insertHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        }
+
+        // Function to fetch and insert footer
+        function insertFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the functions when the page loads
+        window.onload = function () {
+            insertHeader();
+            insertFooter();
+        };
+    </script>
+
+</body>
+
+</html>

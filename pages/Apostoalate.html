@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to KHRIST JOYTI PROVINCE</title>
+
+    <link rel="shortcut icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+    <link rel="icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <link href="../css/flaticon.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/custom-animate.css" rel="stylesheet">
+    <link href="../css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="../css/owl.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+
+        <!-- Main Header-->
+        <div id="header"></div>
+
+        <!-- Page Title -->
+        <section class="page-title" style="background-image:url(images/background/bg-13.jpg)">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>Apostoalate</h1>
+                    <ul class="bread-crumb">
+                        <li><a class="home" href="./index.html"><span class="fa fa-home"></span></a></li>
+                        <li>Apostoalate</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <div class="auto-container">
+                <div class="description">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h3 class="mt-5">APOSTOALATE</h3>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>Formation</h4>
+                                    <ul class="list-unstyled">
+                                        <li>We have formation houses in Sundargarh, Raipur and Jharsugua preparing the candidates to be future priests to continue the work of Christ.</li>
+                                        <li>We are all together 86 Priests involved in various apostolate.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Parish Apostolate</h4>
+                                    <ul class="list-unstyled">
+                                        <li>We are working in 18 Parishes, in the Diocese of Bacolod, Asti, Rourkela, Raipur, Jashpur, Ambikapur and Ranchi.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Education Apostolate</h4>
+                                    <ul class="list-unstyled">
+                                        <li>We too are working the Schools and colleges in Diocese.</li>
+                                        <li>We have 9 English medium School, 11 Hindi Medium School, 1 College and 1 Oriya Medium School.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>Social Apostolate</h4>
+                                    <ul class="list-unstyled">
+                                        <li>We too have boarding for the poor children so that they can do their studies well.</li>
+                                        <li>We have 14 boarding for the poor children. We are helping them to come up in life.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Spiritual Renewal Centre</h4>
+                                    <ul class="list-unstyled">
+                                        <li>We too have Spiritual renewal centre and Social Service centre in Bilaspur.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Our Goal</h4>
+                                    <p>In this way we are trying to make the world better place to live in by forming the young generation though our Institutions.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <br />
+        <!-- Main Footer -->
+        <div id="footer"></div>
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/owl.js"></script>
+    <script src="../js/appear.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.fancybox.js"></script>
+    <script src="../js/menu-nav-btn.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>
+    <script src="../js/jquery.countdown.min.js"></script>
+    <script src="../js/knob.js"></script>
+    <!-- Custom J../S -->
+    <script src="../js/script.js"></script>
+    <script>
+        // Function to fetch and insert header
+        function insertHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        }
+
+        // Function to fetch and insert footer
+        function insertFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the functions when the page loads
+        window.onload = function () {
+            insertHeader();
+            insertFooter();
+        };
+    </script>
+
+</body>
+
+</html>
