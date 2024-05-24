@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Welcome to KHRIST JOYTI PROVINCE</title>
 
-    <link rel="shortcut icon" href="../images/home/raipur-logo.png" type="image/x-icon">
-    <link rel="icon" href="../images/home/raipur-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/home/raipur-logo.png" type="image/x-icon">
+    <link rel="icon" href="images/home/raipur-logo.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap"
@@ -143,7 +143,8 @@
                                 Pallottine Entities in India carrying out the original vision of the Founder in the
                                 remote missions of India.</div>
 
-                            <button class="theme-btn btn-style-one" onclick="location.href='about.html'"><span class="txt">Read More</span></button>
+                            <button class="theme-btn btn-style-one" onclick="location.href='about.html'"><span
+                                    class="txt">Read More</span></button>
                         </div>
                     </div>
                 </div>
@@ -374,7 +375,7 @@
     <script>
         // Function to fetch and insert header
         function insertHeader() {
-            fetch('header.html')
+            fetch('./header.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
@@ -383,7 +384,7 @@
 
         // Function to fetch and insert footer
         function insertFooter() {
-            fetch('footer.html')
+            fetch('./footer.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('footer').innerHTML = data;
